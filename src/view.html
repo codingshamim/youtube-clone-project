@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="dark:bg-bgBlack dark:text-white">
+    <!-- mobile-nav start  -->
+    <ul
+      class="mobile-nav md:hidden px-2 py-2 flex justify-between items-center gap-2 bg-black w-full fixed bottom-0 sidebarul"
+    >
+      <li>
+        <a href="#" class="flex flex-col items-center gap-1 text-xs">
+          <svg
+            width="15px"
+            height="15px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M2.33537 7.87495C1.79491 9.00229 1.98463 10.3208 2.36407 12.9579L2.64284 14.8952C3.13025 18.2827 3.37396 19.9764 4.54903 20.9882C5.72409 22 7.44737 22 10.8939 22H13.1061C16.5526 22 18.2759 22 19.451 20.9882C20.626 19.9764 20.8697 18.2827 21.3572 14.8952L21.6359 12.9579C22.0154 10.3208 22.2051 9.00229 21.6646 7.87495C21.1242 6.7476 19.9738 6.06234 17.6731 4.69181L16.2882 3.86687C14.199 2.62229 13.1543 2 12 2C10.8457 2 9.80104 2.62229 7.71175 3.86687L6.32691 4.69181C4.02619 6.06234 2.87583 6.7476 2.33537 7.87495ZM8.2501 17.9998C8.2501 17.5856 8.58589 17.2498 9.0001 17.2498H15.0001C15.4143 17.2498 15.7501 17.5856 15.7501 17.9998C15.7501 18.414 15.4143 18.7498 15.0001 18.7498H9.0001C8.58589 18.7498 8.2501 18.414 8.2501 17.9998Z"
+              class="fill-black dark:fill-secondaryBgWhite"
+            />
+          </svg>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex flex-col items-center gap-1 text-xs">
+          <svg
+            width="15px"
+            height="15px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.98966 10.91C10.4482 10.609 11.0657 10.5541 11.6048 10.8884L14.9764 12.9785C15.5136 13.3116 15.75 13.8874 15.75 14.4102C15.75 14.933 15.5136 15.5088 14.9764 15.8418L11.6048 17.932C11.0657 18.2662 10.4482 18.2114 9.98966 17.9103C9.539 17.6144 9.25 17.0934 9.25 16.5003V12.32C9.25 11.727 9.539 11.2059 9.98966 10.91ZM10.8129 12.1639C10.7945 12.176 10.75 12.2203 10.75 12.32V16.5003C10.75 16.6 10.7945 16.6443 10.8129 16.6564L10.8142 16.6572L14.186 14.5669C14.2072 14.5538 14.25 14.5085 14.25 14.4102C14.25 14.3118 14.2072 14.2665 14.186 14.2534L10.8145 12.1633L10.8129 12.1639Z"
+              class="fill-black dark:fill-white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8.69935 1.25001C8.4795 1.24995 8.31094 1.2499 8.16359 1.26571C6.80943 1.41104 5.77295 2.52304 5.71005 3.87007C4.51917 4.22559 3.67058 5.3275 3.65528 6.5913C3.05445 6.77164 2.53621 7.05606 2.11196 7.51432C1.45997 8.21857 1.25792 9.08649 1.25023 10.1003C1.24283 11.075 1.41651 12.3067 1.63219 13.8363L2.07118 16.9499C2.23979 18.146 2.37676 19.1176 2.58989 19.879C2.81286 20.6756 3.14152 21.331 3.75003 21.8349C4.35372 22.3347 5.06993 22.5502 5.91647 22.6518C6.73501 22.75 7.76474 22.75 9.04682 22.75H14.9531C16.2352 22.75 17.265 22.75 18.0835 22.6518C18.9301 22.5502 19.6463 22.3347 20.25 21.8349C20.8585 21.331 21.1871 20.6756 21.4101 19.879C21.6232 19.1176 21.7602 18.146 21.9288 16.9499L22.3678 13.8363C22.5835 12.3067 22.7572 11.075 22.7498 10.1003C22.7421 9.08649 22.54 8.21857 21.888 7.51432C21.4637 7.05595 20.9453 6.77151 20.3443 6.59118C20.3289 5.3275 19.4805 4.22571 18.2897 3.87013C18.2268 2.52307 17.1903 1.41104 15.8362 1.26571C15.6888 1.2499 15.5203 1.24995 15.3004 1.25001H8.69935ZM18.8105 6.32781C18.6734 5.72018 18.1306 5.25001 17.4617 5.25001H6.53787C5.86896 5.25001 5.32618 5.72019 5.18902 6.32785C6.11481 6.24999 7.24973 6.25 8.61594 6.25001H15.384C16.75 6.25 17.8848 6.24999 18.8105 6.32781ZM16.7677 3.75001C16.6611 3.22633 16.2263 2.8162 15.6761 2.75715C15.6198 2.75111 15.5396 2.75001 15.2588 2.75001H8.74099C8.46013 2.75001 8.37993 2.75111 8.32365 2.75715C7.77344 2.8162 7.33862 3.22633 7.2321 3.75001H16.7677ZM3.21267 8.53336C3.51557 8.20618 3.97106 7.98917 4.85612 7.87145C5.75726 7.75159 6.96357 7.75001 8.67239 7.75001H15.3276C17.0364 7.75001 18.2427 7.75159 19.1439 7.87145C20.0289 7.98917 20.4844 8.20618 20.7873 8.53336C21.0832 8.85293 21.2436 9.28782 21.2498 10.1117C21.2563 10.9618 21.1002 12.0828 20.8738 13.6883L20.4509 16.6883C20.2731 17.9491 20.1486 18.821 19.9656 19.4747C19.7894 20.1042 19.582 20.4405 19.2934 20.6795C18.9999 20.9225 18.6058 21.0784 17.9048 21.1625C17.1861 21.2488 16.2465 21.25 14.9046 21.25H9.09536C7.75347 21.25 6.81393 21.2488 6.09519 21.1625C5.39417 21.0784 5.00014 20.9225 4.70664 20.6795C4.41795 20.4405 4.21058 20.1042 4.03437 19.4747C3.8514 18.821 3.7269 17.9491 3.54913 16.6883L3.12616 13.6883C2.89981 12.0828 2.74373 10.9618 2.75018 10.1117C2.75644 9.28782 2.91681 8.85293 3.21267 8.53336Z"
+              class="fill-black dark:fill-white"
+            />
+          </svg>
+          Shorts
+        </a>
+      </li>
+      <li>
+        <svg
+          width="25px"
+          height="25px"
+          viewBox="0 0 1024 1024"
+          class="icon"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="fill-black dark:fill-white"
+            d="M352 480h320a32 32 0 110 64H352a32 32 0 010-64z"
+          />
+          <path
+            class="fill-black dark:fill-white"
+            d="M480 672V352a32 32 0 1164 0v320a32 32 0 01-64 0z"
+          />
+          <path
+            class="fill-black dark:fill-white"
+            d="M512 896a384 384 0 100-768 384 384 0 000 768zm0 64a448 448 0 110-896 448 448 0 010 896z"
+          />
+        </svg>
+      </li>
+      <li>
+        <a href="#" class="flex flex-col items-center gap-1 text-xs">
+          <svg
+            width="15px"
+            height="15px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17 2.5L17 21.5"
+              class="stroke-black dark:stroke-white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M7 2.5L7 21.5"
+              class="stroke-black dark:stroke-white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M2 12L7 12M22 12L17 12"
+              class="stroke-black dark:stroke-white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M2.5 7L7 7M21.5 7L17 7"
+              class="stroke-black dark:stroke-white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M21.5 17.75C21.9142 17.75 22.25 17.4142 22.25 17C22.25 16.5858 21.9142 16.25 21.5 16.25V17.75ZM17 16.25C16.5858 16.25 16.25 16.5858 16.25 17C16.25 17.4142 16.5858 17.75 17 17.75V16.25ZM7 17.75C7.41421 17.75 7.75 17.4142 7.75 17C7.75 16.5858 7.41421 16.25 7 16.25L7 17.75ZM17 17.75L21.5 17.75V16.25L17 16.25V17.75ZM2 17.75L7 17.75L7 16.25L2 16.25L2 17.75Z"
+              class="fill-black dark:fill-white"
+            />
+            <path
+              d="M14 12C14 11.4722 13.4704 11.1162 12.4112 10.4043C11.3375 9.68271 10.8006 9.3219 10.4003 9.58682C10 9.85174 10 10.5678 10 12C10 13.4322 10 14.1483 10.4003 14.4132C10.8006 14.6781 11.3375 14.3173 12.4112 13.5957C13.4704 12.8838 14 12.5278 14 12Z"
+              class="stroke-black dark:stroke-white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.352 4.28094 21.7133 5.37486 21.8731 7M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2.64799 19.7191 2.28672 18.6251 2.12687 17"
+              class="stroke-black dark:stroke-white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+          Subscriptions
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex flex-col items-center gap-1 text-xs">
+          <svg
+            width="15px"
+            height="15px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="12"
+              cy="6"
+              r="4"
+              class="stroke-black dark:stroke-white"
+              stroke-width="1.5"
+            />
+            <path
+              d="M19.9975 18C20 17.8358 20 17.669 20 17.5C20 15.0147 16.4183 13 12 13C7.58172 13 4 15.0147 4 17.5C4 19.9853 4 22 12 22C14.231 22 15.8398 21.8433 17 21.5634"
+              class="stroke-black dark:stroke-white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+          You
+        </a>
+      </li>
+    </ul>
+    <!-- navbar start  -->
+
+    <nav class="py-2">
+      <div class="custom-container flex justify-between">
+        <!-- left side of navbar start  -->
+        <div class="left-side md:w-[30%]">
+          <div class="brand-container flex lg:gap-2">
+            <div
+              class="hamburger hover:bg-secondaryBgWhite hover:dark:bg-secondaryBg transition-all duration-150 rounded-sm"
+            >
+              <span
+                class="bg-bgBlack dark:bg-white after:bg-bgBlack before:bg-bgBlack after:dark:bg-white before:dark:bg-white"
+              ></span>
+            </div>
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-2 cursor-pointer">
+              <svg
+                width="30px"
+                height="30px"
+                viewBox="0 -3 20 20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                fill="#e01515"
+                stroke="#e01515"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="Dribbble-Light-Preview"
+                      transform="translate(-300.000000, -7442.000000)"
+                      fill="#07beb8"
+                    >
+                      <g
+                        id="icons"
+                        transform="translate(56.000000, 160.000000)"
+                      >
+                        <path
+                          d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289"
+                          id="youtube-[#000000]"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <p class="font-bold text-sm md:text-base">SteamHive</p>
+            </a>
+          </div>
+        </div>
+        <!-- left side of navbar end  -->
+
+        <!-- searchbar start  -->
+        <div
+          class="search-bar hidden md:w-[40%] relative bg-secondaryBgWhite dark:bg-secondaryBg rounded-[30px] md:flex"
+        >
+          <input
+            type="text"
+            placeholder="Search video"
+            class="w-full bg-transparent border border-transparent focus:dark:border-secondaryBgWhite focus:border-secondaryBg h-full px-4 rounded-[30px] outline-none absolute"
+          />
+          <button class="absolute top-[9px] right-4">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 32 32"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+              class="fill-black dark:fill-white"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+
+              <g id="SVGRepo_iconCarrier">
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                  sketch:type="MSPage"
+                >
+                  <g
+                    id="Icon-Set"
+                    sketch:type="MSLayerGroup"
+                    transform="translate(-256.000000, -1139.000000)"
+                    class="fill-black dark:fill-white"
+                  >
+                    <path
+                      d="M269.46,1163.45 C263.17,1163.45 258.071,1158.44 258.071,1152.25 C258.071,1146.06 263.17,1141.04 269.46,1141.04 C275.75,1141.04 280.85,1146.06 280.85,1152.25 C280.85,1158.44 275.75,1163.45 269.46,1163.45 L269.46,1163.45 Z M287.688,1169.25 L279.429,1161.12 C281.591,1158.77 282.92,1155.67 282.92,1152.25 C282.92,1144.93 276.894,1139 269.46,1139 C262.026,1139 256,1144.93 256,1152.25 C256,1159.56 262.026,1165.49 269.46,1165.49 C272.672,1165.49 275.618,1164.38 277.932,1162.53 L286.224,1170.69 C286.629,1171.09 287.284,1171.09 287.688,1170.69 C288.093,1170.3 288.093,1169.65 287.688,1169.25 L287.688,1169.25 Z"
+                      id="search"
+                      sketch:type="MSShapeGroup"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+        <!-- searchbar start end -->
+
+        <!-- navbar actions  -->
+        <div class="md:w-[30%] flex gap-2 lg:gap-4 justify-end items-center">
+          <span
+            class="w-[40px] h-[40px] hidden md:flex justify-center items-center transition-all duration-150 hover:bg-secondaryBgWhite hover:dark:bg-secondaryBg cursor-pointer"
+            ><svg
+              width="25px"
+              height="25px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17 12V8C17 6.89543 16.1046 6 15 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18H15C16.1046 18 17 17.1046 17 16V12ZM17 12L21 8V16L17 12Z"
+                class="stroke-black dark:stroke-white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+              />
+              <path
+                d="M10 9V12M10 15V12M10 12H13M10 12H7"
+                class="stroke-black dark:stroke-white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+              /></svg
+          ></span>
+          <span
+            class="w-[40px] h-[40px] flex md:hidden justify-center items-center transition-all duration-150 hover:bg-secondaryBgWhite hover:dark:bg-secondaryBg cursor-pointer"
+          >
+            <svg
+              width="15px"
+              height="15px"
+              viewBox="0 0 32 32"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+              class="fill-black dark:fill-white"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+
+              <g id="SVGRepo_iconCarrier">
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                  sketch:type="MSPage"
+                >
+                  <g
+                    id="Icon-Set"
+                    sketch:type="MSLayerGroup"
+                    transform="translate(-256.000000, -1139.000000)"
+                    class="fill-black dark:fill-white"
+                  >
+                    <path
+                      d="M269.46,1163.45 C263.17,1163.45 258.071,1158.44 258.071,1152.25 C258.071,1146.06 263.17,1141.04 269.46,1141.04 C275.75,1141.04 280.85,1146.06 280.85,1152.25 C280.85,1158.44 275.75,1163.45 269.46,1163.45 L269.46,1163.45 Z M287.688,1169.25 L279.429,1161.12 C281.591,1158.77 282.92,1155.67 282.92,1152.25 C282.92,1144.93 276.894,1139 269.46,1139 C262.026,1139 256,1144.93 256,1152.25 C256,1159.56 262.026,1165.49 269.46,1165.49 C272.672,1165.49 275.618,1164.38 277.932,1162.53 L286.224,1170.69 C286.629,1171.09 287.284,1171.09 287.688,1170.69 C288.093,1170.3 288.093,1169.65 287.688,1169.25 L287.688,1169.25 Z"
+                      id="search"
+                      sketch:type="MSShapeGroup"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </span>
+          <span class="navbarActionItem">
+            <svg
+              width="25px"
+              height="25px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.7778 16.4066C18.1725 16.2808 18.3904 15.8588 18.2646 15.4642C18.1388 15.0696 17.7168 14.8516 17.3222 14.9774L17.7778 16.4066ZM11.6797 15.9343C11.2657 15.9455 10.9391 16.2902 10.9503 16.7043C10.9615 17.1183 11.3062 17.4449 11.7203 17.4337L11.6797 15.9343ZM16.876 16.0131C17.0578 16.3853 17.5068 16.5397 17.8791 16.358C18.2513 16.1762 18.4057 15.7272 18.224 15.3549L16.876 16.0131ZM16.9104 14.374L16.2225 14.6728C16.2269 14.683 16.2316 14.6931 16.2364 14.7031L16.9104 14.374ZM15.9422 10.806L16.6868 10.7157C16.6855 10.7048 16.6839 10.694 16.6821 10.6832L15.9422 10.806ZM11.7068 5.941C11.2926 5.941 10.9568 6.27679 10.9568 6.691C10.9568 7.10521 11.2926 7.441 11.7068 7.441V5.941ZM11.7068 7.441C12.121 7.441 12.4568 7.10521 12.4568 6.691C12.4568 6.27679 12.121 5.941 11.7068 5.941V7.441ZM7.45778 10.807L6.71795 10.6839C6.71614 10.6948 6.71457 10.7057 6.71325 10.7166L7.45778 10.807ZM6.48961 14.374L7.16357 14.7031C7.16843 14.6931 7.17308 14.683 7.1775 14.6728L6.48961 14.374ZM5.17605 15.3549C4.99431 15.7272 5.14873 16.1762 5.52095 16.358C5.89317 16.5397 6.34223 16.3853 6.52397 16.0131L5.17605 15.3549ZM10.9568 6.691C10.9568 7.10521 11.2926 7.441 11.7068 7.441C12.121 7.441 12.4568 7.10521 12.4568 6.691H10.9568ZM12.4568 5C12.4568 4.58579 12.121 4.25 11.7068 4.25C11.2926 4.25 10.9568 4.58579 10.9568 5H12.4568ZM10.9568 6.691C10.9568 7.10521 11.2926 7.441 11.7068 7.441C12.121 7.441 12.4568 7.10521 12.4568 6.691H10.9568ZM12.4568 5C12.4568 4.58579 12.121 4.25 11.7068 4.25C11.2926 4.25 10.9568 4.58579 10.9568 5H12.4568ZM6.07781 14.9774C5.68317 14.8516 5.26125 15.0696 5.13544 15.4642C5.00963 15.8588 5.22756 16.2808 5.6222 16.4066L6.07781 14.9774ZM11.6797 17.4337C12.0938 17.4449 12.4385 17.1183 12.4497 16.7043C12.4609 16.2902 12.1343 15.9455 11.7203 15.9343L11.6797 17.4337ZM10.5 16.523C10.5 16.1088 10.1642 15.773 9.75001 15.773C9.33579 15.773 9.00001 16.1088 9.00001 16.523H10.5ZM14.4049 16.523C14.4049 16.1088 14.0691 15.773 13.6549 15.773C13.2407 15.773 12.9049 16.1088 12.9049 16.523H14.4049ZM17.3222 14.9774C15.4929 15.5606 13.5943 15.8825 11.6797 15.9343L11.7203 17.4337C13.7761 17.3782 15.8144 17.0325 17.7778 16.4066L17.3222 14.9774ZM18.224 15.3549L17.5844 14.0449L16.2364 14.7031L16.876 16.0131L18.224 15.3549ZM17.5983 14.0752C17.1347 13.008 16.8275 11.8759 16.6868 10.7157L15.1977 10.8963C15.3558 12.1997 15.701 13.4723 16.2225 14.6728L17.5983 14.0752ZM16.6821 10.6832C16.4696 9.40313 16.017 8.21501 15.1948 7.33897C14.3526 6.44171 13.1869 5.941 11.7068 5.941V7.441C12.8193 7.441 13.5729 7.80279 14.1011 8.36553C14.6492 8.94949 15.0181 9.81887 15.2024 10.9288L16.6821 10.6832ZM11.7068 5.941C10.2266 5.941 9.05835 6.44146 8.21321 7.33789C7.38755 8.21366 6.93123 9.40201 6.71795 10.6839L8.19761 10.9301C8.38214 9.82099 8.75359 8.95134 9.30463 8.36686C9.83619 7.80304 10.5936 7.441 11.7068 7.441V5.941ZM6.71325 10.7166C6.57244 11.8765 6.26519 13.0083 5.80171 14.0752L7.1775 14.6728C7.69888 13.4727 8.04413 12.2004 8.20232 10.8974L6.71325 10.7166ZM5.81565 14.0449L5.17605 15.3549L6.52397 16.0131L7.16357 14.7031L5.81565 14.0449ZM12.4568 6.691V5H10.9568V6.691H12.4568ZM12.4568 6.691V5H10.9568V6.691H12.4568ZM5.6222 16.4066C7.58558 17.0325 9.62394 17.3782 11.6797 17.4337L11.7203 15.9343C9.80576 15.8825 7.90713 15.5606 6.07781 14.9774L5.6222 16.4066ZM9.00001 16.523V17.023H10.5V16.523H9.00001ZM9.00001 17.023C9.00001 18.5252 10.1921 19.7755 11.7024 19.7755V18.2755C11.0561 18.2755 10.5 17.7327 10.5 17.023H9.00001ZM11.7024 19.7755C13.2127 19.7755 14.4049 18.5252 14.4049 17.023H12.9049C12.9049 17.7327 12.3487 18.2755 11.7024 18.2755V19.7755ZM14.4049 17.023V16.523H12.9049V17.023H14.4049Z"
+                class="fill-black dark:fill-white"
+              />
+            </svg>
+          </span>
+
+          <div class="profile w-[40px] h-[40px] rounded-sm cursor-pointer">
+            <img
+              class="w-full h-full object-cover rounded-sm"
+              src="https://yt3.ggpht.com/17ILeKx3l9jcxKRpqdQnPZBoTaBUyxhiVw7_rfVUjEYBTBc65WpsKKrGzWTOfkQv7eobw-Zv=s88-c-k-c0x00ffffff-no-rj"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- navbar actions end -->
+      </div>
+    </nav>
+    <!-- navbar end  -->
+
+    <main>
+      <div
+        class="custom-container py-[50px] flex flex-col lg:flex-row justify-between gap-2"
+      >
+        <!-- video player section  -->
+        <div class="player-wrapper w-full lg:w-[60%] pb-4">
+          <!-- video player start  -->
+          <div class="video-container bg-black-500 relative">
+            <video src="videos/video.mp4" class="w-full"></video>
+            <!-- video functions start  -->
+            <div
+              class="video-functions bg-[rgba(0,0,0,0.5)] absolute bottom-0 left-0 w-full"
+            >
+              <!-- Progress -->
+              <div
+                class="flex w-full h-1.5 bg-gray-200 rounded-full overflow-hidden dark:bg-neutral-700"
+                role="progressbar"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div
+                  class="flex flex-col justify-center rounded-full overflow-hidden bg-blue-600 text-xs text-white text-center whitespace-nowrap transition duration-500 dark:bg-blue-500"
+                  style="width: 25%"
+                ></div>
+              </div>
+              <!-- End Progress -->
+              <div
+                class="controls mt-2 grid grid-cols-2 items-center lg:grid-cols-3"
+              >
+                <!-- volume start  -->
+                <div class="flex gap-2">
+                  <div class="volume flex gap-1 items-center">
+                    <span class="cursor-pointer">
+                      <svg
+                        width="25px"
+                        height="25px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.0012 8.99984H9.1C8.53995 8.99984 8.25992 8.99984 8.04601 9.10883C7.85785 9.20471 7.70487 9.35769 7.60899 9.54585C7.5 9.75976 7.5 10.0398 7.5 10.5998V13.3998C7.5 13.9599 7.5 14.2399 7.60899 14.4538C7.70487 14.642 7.85785 14.795 8.04601 14.8908C8.25992 14.9998 8.53995 14.9998 9.1 14.9998H10.0012C10.5521 14.9998 10.8276 14.9998 11.0829 15.0685C11.309 15.1294 11.5228 15.2295 11.7143 15.3643C11.9305 15.5164 12.1068 15.728 12.4595 16.1512L15.0854 19.3023C15.5211 19.8252 15.739 20.0866 15.9292 20.1138C16.094 20.1373 16.2597 20.0774 16.3712 19.9538C16.5 19.811 16.5 19.4708 16.5 18.7902V5.20948C16.5 4.52892 16.5 4.18864 16.3712 4.04592C16.2597 3.92233 16.094 3.86234 15.9292 3.8859C15.7389 3.9131 15.5211 4.17451 15.0854 4.69733L12.4595 7.84843C12.1068 8.27166 11.9305 8.48328 11.7143 8.63542C11.5228 8.77021 11.309 8.87032 11.0829 8.93116C10.8276 8.99984 10.5521 8.99984 10.0012 8.99984Z"
+                          class="stroke-white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                    <input type="range" class="w-[100px] h-2px" />
+                  </div>
+                  <div class="time">2:05/4:50</div>
+                </div>
+                <!-- volume end -->
+                <div
+                  class="justify-center hidden lg:flex cursor-pointer video-playeback items-center gap-4"
+                >
+                  <span>
+                    <svg
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 512 512"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g
+                        id="Page-1"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          id="add"
+                          class="fill-white"
+                          transform="translate(128.000000, 128.000000)"
+                        >
+                          <polygon
+                            id="Path"
+                            points="0 0 0 256 42.6666667 256 42.6666667 128.00512 256 256 256 0 42.6666667 127.989547 42.6666667 0"
+                          ></polygon>
+                        </g>
+                      </g>
+                    </svg>
+                  </span>
+                  <span
+                    ><svg
+                      fill="#fff"
+                      width="20px"
+                      height="20px"
+                      viewBox="0 0 32 32"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.92 24.096q0 0.832 0.576 1.408t1.44 0.608h4.032q0.832 0 1.44-0.608t0.576-1.408v-16.16q0-0.832-0.576-1.44t-1.44-0.576h-4.032q-0.832 0-1.44 0.576t-0.576 1.44v16.16zM18.016 24.096q0 0.832 0.608 1.408t1.408 0.608h4.032q0.832 0 1.44-0.608t0.576-1.408v-16.16q0-0.832-0.576-1.44t-1.44-0.576h-4.032q-0.832 0-1.408 0.576t-0.608 1.44v16.16z"
+                      ></path></svg
+                  ></span>
+                  <span>
+                    <svg
+                      width="20px"
+                      height="20px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M4 20L15.3333 12L4 4V20Z" class="fill-white" />
+                      <path d="M20 4H17.3333V20H20V4Z" class="fill-white" />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  class="video-actions cursor-pointer justify-end flex gap-4 items-center"
+                >
+                  <span
+                    ><svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3 6C3 4.34315 4.34315 3 6 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V6ZM6 5H18C18.5523 5 19 5.44772 19 6V12.2676C18.7058 12.0974 18.3643 12 18 12H14C12.8954 12 12 12.8954 12 14V18C12 18.3643 12.0974 18.7058 12.2676 19H6C5.44772 19 5 18.5523 5 18V6C5 5.44772 5.44772 5 6 5Z"
+                        fill="#fff"
+                      /></svg
+                  ></span>
+                  <span
+                    ><svg
+                      width="20px"
+                      height="20px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 22C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14"
+                        class="stroke-white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M10 2C6.22876 2 4.34315 2 3.17157 3.17157C2.92939 3.41375 2.73727 3.68645 2.58487 4M2 10C2 9.26451 2 8.60074 2.00869 8"
+                        class="stroke-white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M14 2C17.7712 2 19.6569 2 20.8284 3.17157C22 4.34315 22 6.22876 22 10"
+                        class="stroke-white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M14 22C17.7712 22 19.6569 22 20.8284 20.8284C21.0706 20.5862 21.2627 20.3136 21.4151 20M22 14C22 14.7355 22 15.3993 21.9913 16"
+                        class="stroke-white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      /></svg
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <!-- video functions end  -->
+          </div>
+          <!-- video player end  -->
+          <!-- video title  -->
+          <div class="video-title mt-2">
+            <h1>
+              Benche Thakar Gaan | বেঁচে থাকার গান | Noble Man | Anupam Roy |
+              Rupam Islam | Lyrical Video
+            </h1>
+          </div>
+          <!-- video title end -->
+          <!-- video channel info  -->
+          <div class="video-channel">
+            <div class="channel-container flex justify-between">
+              <div class="flex items-center gap-6 mt-2 justify-between w-full">
+                <div
+                  class="channel-inforomation flex gap-2 justify-between items-center"
+                >
+                  <div class="channelimg w-[40px] h-[40px] rounded-[50%]">
+                    <img
+                      src="https://yt3.ggpht.com/5ozNNrQBUJY8TPt2BYo6fEL-07ilkWHVedWCGFjtvuHU0aYrg1Iop-LJvprodA1_9-MTv7G_YA=s48-c-k-c0x00ffffff-no-rj"
+                      alt=""
+                      class="w-full h-full object-cover rounded-[50%]"
+                    />
+                  </div>
+                  <div class="channel-info">
+                    <h2 class="text-xs lg:text-base">Zee Music Company</h2>
+                    <p class="text-gray-400 text-xs lg:text-base">
+                      110M subscribers
+                    </p>
+                  </div>
+                </div>
+                <div class="hidden post-reaction md:flex items-center gap-4">
+                  <span class="flex items-center gap-[2px] text-sm">
+                    <svg
+                      class="hover:bg-secondaryBg p-2 rounded-[50%]"
+                      width="40px"
+                      height="40px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 10V20M8 10L4 9.99998V20L8 20M8 10L13.1956 3.93847C13.6886 3.3633 14.4642 3.11604 15.1992 3.29977L15.2467 3.31166C16.5885 3.64711 17.1929 5.21057 16.4258 6.36135L14 9.99998H18.5604C19.8225 9.99998 20.7691 11.1546 20.5216 12.3922L19.3216 18.3922C19.1346 19.3271 18.3138 20 17.3604 20L8 20"
+                        class="stroke-black dark:stroke-white"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    16
+                  </span>
+                  <span class="flex items-center gap-[2px] text-sm">
+                    <svg
+                      class="hover:bg-secondaryBg p-2 rounded-[50%]"
+                      width="40px"
+                      height="40px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 14V4M8 14L4 14V4.00002L8 4M8 14L13.1956 20.0615C13.6886 20.6367 14.4642 20.884 15.1992 20.7002L15.2467 20.6883C16.5885 20.3529 17.1929 18.7894 16.4258 17.6387L14 14H18.5604C19.8225 14 20.7691 12.8454 20.5216 11.6078L19.3216 5.60779C19.1346 4.67294 18.3138 4.00002 17.3604 4.00002L8 4"
+                        class="stroke-black dark:stroke-white"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    20
+                  </span>
+                  <span class="flex items-center gap-[2px] text-sm">
+                    <svg
+                      class="hover:bg-secondaryBg p-2 rounded-[50%]"
+                      width="40px"
+                      height="40px"
+                      viewBox="-0.5 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.47 4.13998C12.74 4.35998 12.28 5.96 12.09 7.91C6.77997 7.91 2 13.4802 2 20.0802C4.19 14.0802 8.99995 12.45 12.14 12.45C12.34 14.21 12.79 15.6202 13.47 15.8202C15.57 16.4302 22 12.4401 22 9.98006C22 7.52006 15.57 3.52998 13.47 4.13998Z"
+                        class="stroke-black dark:stroke-white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="subscribe-button">
+                  <button
+                    class="text-xs py-2 px-4 rounded-sm bg-white text-black outline-none"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- reaction start  -->
+          <div class="post-reaction md:hidden mt-4 mb-2 flex items-center gap-4">
+            <span class="flex items-center gap-[2px] text-sm">
+              <svg
+                class="hover:bg-secondaryBg p-2 rounded-[50%]"
+                width="40px"
+                height="40px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 10V20M8 10L4 9.99998V20L8 20M8 10L13.1956 3.93847C13.6886 3.3633 14.4642 3.11604 15.1992 3.29977L15.2467 3.31166C16.5885 3.64711 17.1929 5.21057 16.4258 6.36135L14 9.99998H18.5604C19.8225 9.99998 20.7691 11.1546 20.5216 12.3922L19.3216 18.3922C19.1346 19.3271 18.3138 20 17.3604 20L8 20"
+                  class="stroke-black dark:stroke-white"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              16
+            </span>
+            <span class="flex items-center gap-[2px] text-sm">
+              <svg
+                class="hover:bg-secondaryBg p-2 rounded-[50%]"
+                width="40px"
+                height="40px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 14V4M8 14L4 14V4.00002L8 4M8 14L13.1956 20.0615C13.6886 20.6367 14.4642 20.884 15.1992 20.7002L15.2467 20.6883C16.5885 20.3529 17.1929 18.7894 16.4258 17.6387L14 14H18.5604C19.8225 14 20.7691 12.8454 20.5216 11.6078L19.3216 5.60779C19.1346 4.67294 18.3138 4.00002 17.3604 4.00002L8 4"
+                  class="stroke-black dark:stroke-white"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              20
+            </span>
+            <span class="flex items-center gap-[2px] text-sm">
+              <svg
+                class="hover:bg-secondaryBg p-2 rounded-[50%]"
+                width="40px"
+                height="40px"
+                viewBox="-0.5 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.47 4.13998C12.74 4.35998 12.28 5.96 12.09 7.91C6.77997 7.91 2 13.4802 2 20.0802C4.19 14.0802 8.99995 12.45 12.14 12.45C12.34 14.21 12.79 15.6202 13.47 15.8202C15.57 16.4302 22 12.4401 22 9.98006C22 7.52006 15.57 3.52998 13.47 4.13998Z"
+                  class="stroke-black dark:stroke-white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </div>
+          <!-- reaction end  -->
+          <!-- video channel info end -->
+          <!-- video descriptions  -->
+          <div
+            class="video-description w-full py-2 px-4 bg-secondaryBg rounded-sm mt-2"
+          >
+            <p class="text-xs">
+              97,987,744 views Nov 28, 2018 Non Stop ARIJIT SINGH hits 🎤🎵🎶🎼
+              👉🏻 SUBSCRIBE to Zee Music Company - <br />...
+              <a href="" class="text-primary">more</a>
+            </p>
+          </div>
+          <!-- video descriptions end -->
+          <!-- video comments header -->
+          <div class="video-comments flex justify-between items-center mt-4">
+            <h1 class="text-xl font-bold">29,186 Comments</h1>
+            <div class="sort-video flex gap-2 cursor-pointer">
+              <span
+                ><svg
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 6H20M4 12H14M4 18H9"
+                    class="stroke-black dark:stroke-white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></span>
+              <p>Sort by</p>
+            </div>
+          </div>
+          <!-- video comments header end -->
+          <!-- video comment input  -->
+          <div class="add-comment mt-6 flex items-center gap-4">
+            <div class="user-img w-[40px] h-[40px] rounded-[50%]">
+              <img
+                src="https://yt3.ggpht.com/17ILeKx3l9jcxKRpqdQnPZBoTaBUyxhiVw7_rfVUjEYBTBc65WpsKKrGzWTOfkQv7eobw-Zv=s48-c-k-c0x00ffffff-no-rj"
+                alt=""
+                class="w-full h-full rounded-[50%] object-cover"
+              />
+            </div>
+            <div class="w-full flex justify-between">
+              <input
+                type="text"
+                placeholder="Add Comment..."
+                class="w-[60%] md:w-[80%] py-1 border-b border-white outline-none bg-transparent px-2"
+              />
+              <button
+                class="ml-2 text-xs py-2 px-4 bg-white text-black rounded-sm"
+              >
+                Comment
+              </button>
+            </div>
+          </div>
+          <!-- video comment input end -->
+          <!-- comment list  -->
+          <ul class="mt-8 pb-[50px]">
+            <li class="flex gap-2 mt-4">
+              <div class="user-img w-[40px] h-[40px] rounded-[50%]">
+                <img
+                  src="https://yt3.ggpht.com/17ILeKx3l9jcxKRpqdQnPZBoTaBUyxhiVw7_rfVUjEYBTBc65WpsKKrGzWTOfkQv7eobw-Zv=s48-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  class="w-full h-full rounded-[50%] object-cover"
+                />
+              </div>
+              <div class="desc w-[80%]">
+                <h2>
+                  Md Shamim
+                  <span class="text-gray-400 text-sm ml-4">4m Ago</span>
+                </h2>
+                <p class="text-gray-400 text-sm">
+                  "Tujh me khoya rahu main Mujhme khoyi rahe tu Khudko dhund
+                  lenge phir kabhi..."️️️ What a music "Tujh me khoya rahu main
+                  Mujhme khoyi rahe tu Khudko dhund lenge phir kabhi..."️️️ What
+                  a music "Tujh me khoya rahu main Mujhme khoyi rahe tu Khudko
+                  dhund lenge phir kabhi..."️️️ What a music
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-2 mt-4">
+              <div class="user-img w-[40px] h-[40px] rounded-[50%]">
+                <img
+                  src="https://yt3.ggpht.com/17ILeKx3l9jcxKRpqdQnPZBoTaBUyxhiVw7_rfVUjEYBTBc65WpsKKrGzWTOfkQv7eobw-Zv=s48-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  class="w-full h-full rounded-[50%] object-cover"
+                />
+              </div>
+              <div class="desc w-[80%]">
+                <h2>
+                  Md Shamim
+                  <span class="text-gray-400 text-sm ml-4">4m Ago</span>
+                </h2>
+                <p class="text-gray-400 text-sm">
+                  "Tujh me khoya rahu main Mujhme khoyi rahe tu Khudko dhund
+                  lenge phir kabhi..."️️️ What a music "Tujh me khoya rahu main
+                  Mujhme khoyi rahe tu Khudko dhund lenge phir kabhi..."️️️ What
+                  a music "Tujh me khoya rahu main Mujhme khoyi rahe tu Khudko
+                  dhund lenge phir kabhi..."️️️ What a music
+                </p>
+              </div>
+            </li>
+          </ul>
+          <!-- comment list end -->
+        </div>
+        <!-- video player section end -->
+        <div class="suggest-list lg:w-[40%]">
+          <ul>
+            <li
+              class="flex flex-col md:flex-row hover:bg-secondaryBg transition-all duration-150 cursor-pointer p-[2px] min-h-[100px] gap-2"
+            >
+              <div class="lg:w-[40%] h-full object-cover">
+                <img
+                  class="w-full h-full object-cover transition-all duration-150"
+                  src="https://i.ytimg.com/vi/za4Q_7gYyS4/hqdefault.jpg?sqp=-oaymwExCOADEI4CSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYZSBlKEcwDw==&rs=AOn4CLAJmizvy6Hu5otQGVKbzpDQnTlZAg"
+                  alt=""
+                />
+              </div>
+              <div class="lg:w-[60%]">
+                <h1 class="text-sm">
+                  Build A Custom Video Player in HTML CSS & JavaScript
+                </h1>
+                <p class="text-xs mt-1">Lyrics Music BD</p>
+                <p class="text-sm mt-1 text-gray-400">
+                  30k Views
+                  <span
+                    class="inline-block bg-black dark:bg-gray-600 w-[8px] h-[8px] rounded-[50%]"
+                  ></span>
+                  1 Hour Ago
+                </p>
+              </div>
+            </li>
+            <li
+              class="mt-2 flex flex-col md:flex-row hover:bg-secondaryBg transition-all duration-150 cursor-pointer p-[2px] min-h-[100px] gap-2"
+            >
+              <div class="w-full lg:w-[40%] h-full object-cover">
+                <img
+                  class="w-full h-full object-cover transition-all duration-150"
+                  src="https://i.ytimg.com/vi/za4Q_7gYyS4/hqdefault.jpg?sqp=-oaymwExCOADEI4CSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYZSBlKEcwDw==&rs=AOn4CLAJmizvy6Hu5otQGVKbzpDQnTlZAg"
+                  alt=""
+                />
+              </div>
+              <div class="w-full lg:w-[60%]">
+                <h1 class="text-sm">
+                  Jaan Nisaar - Lyrical | Kedarnath| Arijit Singh | Sushant
+                  Singh Rajput | Sara Ali Khan| Amit Trivedi
+                </h1>
+                <p class="text-xs mt-1">Lyrics Music BD</p>
+                <p class="text-sm mt-1 text-gray-400">
+                  30k Views
+                  <span
+                    class="inline-block bg-black dark:bg-gray-600 w-[8px] h-[8px] rounded-[50%]"
+                  ></span>
+                  1 Hour Ago
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
