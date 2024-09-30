@@ -1,4 +1,5 @@
 import NavbarActionItem from "./NavbarActionItem";
+import NavbarProfile from "./NavbarProfile";
 
 export default function NavbarActions() {
   return (
@@ -67,13 +68,7 @@ export default function NavbarActions() {
         </svg>
       </NavbarActionItem>
 
-      <div className="profile">
-        <img
-          className="w-full h-full object-cover rounded-sm"
-          src="https://yt3.ggpht.com/17ILeKx3l9jcxKRpqdQnPZBoTaBUyxhiVw7_rfVUjEYBTBc65WpsKKrGzWTOfkQv7eobw-Zv=s88-c-k-c0x00ffffff-no-rj"
-          alt=""
-        />
-      </div>
+      <NavbarProfile />
     </div>
   );
 }

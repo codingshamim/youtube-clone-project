@@ -2,11 +2,18 @@
 
 import useHamburger from "@/hooks/useHamburger";
 import Link from "next/link";
+import { useParams, usePathname } from "next/navigation";
 
 export default function Sidebar() {
+  const pathName = usePathname();
+
   const { isHamburger, setHamburger } = useHamburger();
   return (
-    <aside className={`md:w-[20%] ${isHamburger || "md:w-[4%]"} md:h-[91vh]`}>
+    <aside
+      className={`hidden md:flex md:w-[20%] ${
+        isHamburger || "md:w-[4%]"
+      } md:h-[91vh]`}
+    >
       {/* openning time sidebar */}
       <ul className={`sidebarul ${isHamburger || "hidden"}`}>
         <li className="py-2 px-4 bg-secondaryBg mt-2">
@@ -30,7 +37,7 @@ export default function Sidebar() {
         </li>
 
         <li className="py-2 px-4 mt-2">
-          <Link href="/me" className="flex items-center gap-4">
+          <Link href="/codingshamim" className="flex items-center gap-4">
             <svg
               width="20px"
               height="20px"

@@ -1,8 +1,9 @@
 import Navbar from "@/components/navbar/Navbar";
-import "./globals.css";
+import "../globals.css";
 import { Montserrat } from "next/font/google";
 
 import HamburgerProvider from "@/providers/HamburgerProvider";
+import Sidebar from "@/components/sidebar/Sidebar";
 
 const mono = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -20,7 +21,13 @@ export default function RootLayout({ children }) {
       <body className={`dark:bg-black dark:text-white ${mono.className}`}>
         <HamburgerProvider>
           <Navbar />
-          {children}
+          <main className="custom-container flex gap-2 w-full">
+            <Sidebar />
+            <div className="w-full md:w-[90%] mt-2 md:px-4 rounded-md">
+              {" "}
+              {children}
+            </div>
+          </main>
         </HamburgerProvider>
       </body>
     </html>

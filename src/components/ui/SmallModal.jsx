@@ -1,6 +1,6 @@
 export default function SmallModal() {
   return (
-    <div className="account-modal top-14 rounded-md fixed z-50 w-full md:w-[200px] md:right-12 bg-secondaryBgWhite dark:bg-secondaryBg">
+    <div className="account-modal pb-2 top-14 rounded-md fixed z-50 w-full md:w-[200px] md:right-12 bg-secondaryBgWhite dark:bg-secondaryBg">
       <div>
         <ul className="mt-2">
           <li className="hover:bg-secondaryBgWhite hover:dark:bg-black px-4 py-2 cursor-pointer">
